@@ -5,6 +5,6 @@ integrantes = [
     "Sofia Zamudio",
 ]
 
-print("Integrantes del grupo:") # Imprimir nombres de los integrantes del grupo
+print("Integrantes del grupo:") # Imprimir nombres de los integrantes del grupo.
 for nombres in integrantes:
     print("-", nombres)
