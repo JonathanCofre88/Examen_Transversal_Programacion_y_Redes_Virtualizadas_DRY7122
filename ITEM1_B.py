@@ -1,3 +1,4 @@
+#Tipos de VLAN.
 vlan = int(input("Número de VLAN: "))
 
 if vlan >= 1 and vlan <= 1005:
@@ -7,4 +8,3 @@ else:
         print("Rango extendido")
     else:
         print("VLAN no válida")
-        
