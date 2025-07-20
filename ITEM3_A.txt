@@ -1,0 +1,5 @@
+###########Validacion de acceso a base de datos SQL############
+
+curl -k -X POST -F 'username=jonathan cofre' -F 'password=cisco123' https://0.0.0.0:5800/login/v2
+curl -k -X POST -F 'username=sofia zamudio' -F 'password=cisco123' https://0.0.0.0:5800/login/v2
+curl -k -X POST -F 'username=daniel rodriguez' -F 'password=cisco123' https://0.0.0.0:5800/login/v2
