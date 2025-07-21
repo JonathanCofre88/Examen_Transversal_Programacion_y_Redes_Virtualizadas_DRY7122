@@ -29,7 +29,7 @@ def geocoding(location, key):
         print("No se pudo encontrar la ubicación.")
         return response.status_code, None, None, location
 
-# Elegir medio de transporte
+# Elegir medio de transporte (sin elif)
 def elegir_medio_transporte():
     print("\nElige el medio de transporte:")
     print("1 - Vehículo")
@@ -38,13 +38,14 @@ def elegir_medio_transporte():
 
     while True:
         opcion = input("Ingresa 1, 2 o 3 (o 's' para salir): ").lower()
+
         if opcion == "s":
             return None
-        elif opcion == "1":
+        if opcion == "1":
             return "car"
-        elif opcion == "2":
+        if opcion == "2":
             return "bike"
-        elif opcion == "3":
+        if opcion == "3":
             return "foot"
         else:
             print("Opción no válida, intenta de nuevo.")
